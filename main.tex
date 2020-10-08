@@ -1,0 +1,125 @@
+%% start of file `template.tex'.
+%% Copyright 2006-2013 Xavier Danaux (xdanaux@gmail.com).
+%
+% This work may be distributed and/or modified under the
+% conditions of the LaTeX Project Public License version 1.3c,
+% available at http://www.latex-project.org/lppl/.
+
+
+\documentclass[11pt,a4paper,sans]{moderncv}        % possible options include font size ('10pt', '11pt' and '12pt'), paper size ('a4paper', 'letterpaper', 'a5paper', 'legalpaper', 'executivepaper' and 'landscape') and font family ('sans' and 'roman')
+
+% modern themes
+\moderncvstyle{banking}                            % style options are 'casual' (default), 'classic', 'oldstyle' and 'banking'
+\moderncvcolor{blue}                                % color options 'blue' (default), 'orange', 'green', 'red', 'purple', 'grey' and 'black'
+%\renewcommand{\familydefault}{\sfdefault}         % to set the default font; use '\sfdefault' for the default sans serif font, '\rmdefault' for the default roman one, or any tex font name
+%\nopagenumbers{}                                  % uncomment to suppress automatic page numbering for CVs longer than one page
+
+% character encoding
+\usepackage[utf8]{inputenc}                       % if you are not using xelatex ou lualatex, replace by the encoding you are using
+%\usepackage{CJKutf8}                              % if you need to use CJK to typeset your resume in Chinese, Japanese or Korean
+
+% adjust the page margins
+\usepackage[scale=0.94]{geometry}
+%\setlength{\hintscolumnwidth}{3cm}                % if you want to change the width of the column with the dates
+%\setlength{\makecvtitlenamewidth}{10cm}           % for the 'classic' style, if you want to force the width allocated to your name and avoid line breaks. be careful though, the length is normally calculated to avoid any overlap with your personal info; use this at your own typographical risks...
+
+\usepackage{import}
+
+% personal data
+\name{Juan D.Cardozo}{}
+\phone[mobile]{(408) 856 5696}                   % optional, remove / comment the line if not wanted
+\email{jcardozo@ucsc.edu}                               % optional, remove / comment the line if not wanted
+\homepage{www.linkedin.com/in/juandcardozo}   
+ % optional, remove / comment the line if not wanted
+\extrainfo{github.com/JuanDCardozo}                 % optional, remove / comment the line if not wanted
+%\photo[64pt][0.4pt]{picture}                       % optional, remove / comment the line if not wanted; '64pt' is the height the picture must be resized to, 0.4pt is the thickness of the frame around it (put it to 0pt for no frame) and 'picture' is the name of the picture file
+%\quote{Some quote}                                 % optional, remove / comment the line if not wanted
+
+% to show numerical labels in the bibliography (default is to show no labels); only useful if you make citations in your resume
+%\makeatletter
+%\renewcommand*{\bibliographyitemlabel}{\@biblabel{\arabic{enumiv}}}
+%\makeatother
+%\renewcommand*{\bibliographyitemlabel}{[\arabic{enumiv}]}% CONSIDER REPLACING THE ABOVE BY THIS
+
+% bibliography with mutiple entries
+%\usepackage{multibib}
+%\newcites{book,misc}{{Books},{Others}}
+%----------------------------------------------------------------------------------
+%            content
+%----------------------------------------------------------------------------------
+\begin{document}
+%\begin{CJK*}{UTF8}{gbsn}                          % to typeset your resume in Chinese using CJK
+%-----       resume       ---------------------------------------------------------
+\makecvtitle
+\section{Education}
+
+\vspace{0pt}
+
+\begin{itemize}
+
+\item{\cventry{Expected Graduation: June 2017}{Bachelor of Science in Computer Science}{University of California, Santa Cruz}{Santa Cruz, CA}{\textit{}}{}}
+\vspace{1pt}
+ \textbf{Honors:} Dean's List (Winter 2016) , AngelHack 2016 1st Place and HackUCSC (2016) 3rd Place.
+ \\ \textbf{Related Coursework:} Software Engineering, Database Systems I, Artificial Intelligence, Introduction to Operating Systems, Mobile Applications and Web Applications.
+ \\ \textbf{Programming Languages:} JavaScript, Java, C,Python, SQL, HTML, CSS, Prolog, and OCaml.
+ \\ \textbf{Frameworks:} Node.js, Express.js, Angular.js, Android Studio, Google Analytics and Google AdWords
+
+\end{itemize}
+%-------------------------------------------------------------------------------------------
+\section{Work Experience}
+
+\vspace{1pt}
+
+\begin{itemize}
+
+\item{\cventry{October 2016 - Present}{\textbf{Evaluation Analyst Intern}}{\textbf{University of California, Santa Cruz - Educational Partnership Center}}{Santa Cruz, CA}{}{\vspace{3pt} Assist with data collection and analysis from school districts; such as demographic, academic performance and survey data.
+\vspace{3pt}\\• Created simple SQL code with Microsoft Access to accelerate the manipulation of data.\\• Analyzed and generated reports about student and parent data.
+\\
+\cventry{August 2016 - October 2016}{\textbf{Lead Data Entry Assistant}}{}{Santa Cruz, CA}{}{Assist in data collections projects by being a conduit of communication from the Manager to Data Entry Assistants.\\• Managed multiple projects with tight deadlines and supervised three other employees.\\• Improved the management of projects by implementing task tracking methods.}
+\cventry{July 2016 - August 2016}{\textbf{Data Manager Assistant/Data Entry}}{}{Santa Cruz, CA}{}{Provide assistance with research projects by updating, maintaining, and processing files and databases.\\• Processed more than 3000 sensitive student files and information in database systems such as SCRIBE and CoBro. \\• Assisted and oversaw 2 new interns with  database, file management and data training.}
+}
+
+
+\vspace{6pt}
+
+\item{\cventry{June 2014 - September 2015}{\textbf{Web Development and Marketing Manager}}{\textbf{Ofimática S.A.}}{Medellin, Colombia/Online}{}{Plan, create and deploy marketing campaigns to increase sales and improve the branding of the company.\\• Implemented online marketing strategies through Google AdWords that increased sales by 12\%.\\• Tailored the marketing strategy and web services to the commercial goals of the company.}
+
+\cventry{July 2013 - June 2014}{\textbf{Digital Marketing Specialist}}{}{Medellin, Colombia/Online}{}{Employ Google Analytics to improve the performance of the online marketing strategy.\\• Increased the online presence of the company by designing an effective website with HTML, CSS and JavaScript.\\• Conducted research to position the brand in the marketplace for software with Google Analytics.}
+}}
+
+\vspace{1pt}
+
+\end{itemize}
+%------------------------------------------------------------------------------------------
+\section{Software Projects}
+\vspace{1pt}
+\begin{itemize}
+\item{\cventry{}{https://github.com/JuanDCardozo/thingder}{iTradeU}{}{}{\vspace{3pt}E-commerce bartering system prototype created using MongoDB, Angular.js, Express.js and Node.js that allows users to automatically match and trade items they own for items they desire.}}
+\vspace{1pt}
+\item{\cventry{}{github.com/JuanDCardozo/charisma}{Charisma (AngelHack Silicon Valley 2016 1st Place)}{}{}{\vspace{3pt}A public speaking analytic application that provides metrics of a speech such as clarity, words per minute, speech word composition and speech to text. The application was developed in node.js and used HPE Haven On Demands API's.\\}}
+\vspace{1pt}
+\item{\cventry{}{github.com/JuanDCardozo/OnWatch-2.0}{OnWatch 2.0 (HackUCSC 3rd Place Tech-Cares 2016)}{}{}{\vspace{3pt}Android and Pebble watch silent alert app that tracks the user's safety levels. It then adjusts the response to dangerous events like tracking the user's location, recording events, alerting friends and informing the authorities of the situation.\\}}
+\end{itemize}
+\vspace{1pt}
+% Publications from a BibTeX file without multibib
+%  for numerical labels: \renewcommand{\bibliographyitemlabel}{\@biblabel{\arabic{enumiv}}}% CONSIDER MERGING WITH PREAMBLE PART
+%  to redefine the heading string ("Publications"): \renewcommand{\refname}{Articles}
+\nocite{*}
+\bibliographystyle{plain}
+\bibliography{publications}                        % 'publications' is the name of a BibTeX file
+
+% Publications from a BibTeX file using the multibib package
+%\section{Publications}
+%\nocitebook{book1,book2}
+%\bibliographystylebook{plain}
+%\bibliographybook{publications}                   % 'publications' is the name of a BibTeX file
+%\nocitemisc{misc1,misc2,misc3}
+%\bibliographystylemisc{plain}
+%\bibliographymisc{publications}                   % 'publications' is the name of a BibTeX file
+
+%-----       letter       ---------------------------------------------------------
+
+\end{document}
+
+
+%% end of file `template.tex'.
